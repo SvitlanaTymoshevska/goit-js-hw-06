@@ -7,8 +7,9 @@ const refs = {
 refs.buttonChangeColor.addEventListener('click', handleChangeColor);
 
 function handleChangeColor(event) {
-    refs.body.style.backgroundColor = getRandomHexColor();
-    refs.spanColor.textContent = getRandomHexColor();
+    const backgroundColor = getRandomHexColor();
+    refs.body.style.backgroundColor = backgroundColor;
+    refs.spanColor.textContent = backgroundColor;
 }
 
 function getRandomHexColor() {
